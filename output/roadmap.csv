@@ -1,0 +1,26 @@
+rank,id,function_name,category_name,outcome,current,target,gap,priority
+1,GV.PO-01,Govern,Policy,A cybersecurity policy is established and communicated,0,3,3,High
+2,GV.PO-02,Govern,Policy,The policy is reviewed and updated over time,0,3,3,High
+3,ID.RA-05,Identify,Risk Assessment,Threats+vulns+impact are combined to prioritise risk,0,3,3,High
+4,ID.RA-06,Identify,Risk Assessment,"Risk responses are chosen, planned and tracked",0,3,3,High
+5,ID.IM-04,Identify,Improvement,Incident response and continuity plans exist and improve,0,3,3,High
+6,PR.AT-01,Protect,Awareness & Training,Staff get general security awareness training,0,3,3,High
+7,RS.MA-01,Respond,Incident Management,The incident response plan is executed on declaration,0,3,3,High
+8,RC.RP-01,Recover,Incident Recovery Plan Execution,The recovery plan is executed when triggered,0,3,3,High
+9,RC.RP-03,Recover,Incident Recovery Plan Execution,Backup integrity is verified before restoring,0,3,3,High
+10,GV.RM-02,Govern,Risk Management Strategy,Risk appetite and tolerance statements exist,0,2,2,High
+11,GV.RM-06,Govern,Risk Management Strategy,A standard method to calculate and prioritise risk exists,0,2,2,High
+12,GV.OV-01,Govern,Oversight,Risk strategy outcomes are reviewed to adjust direction,0,2,2,High
+13,GV.OV-02,Govern,Oversight,The strategy is reviewed for adequate coverage,0,2,2,High
+14,GV.OV-03,Govern,Oversight,Security performance is measured and reviewed,0,2,2,High
+15,GV.SC-01,Govern,Cybersecurity Supply Chain Risk Management,A supply-chain risk management program exists,0,2,2,High
+16,GV.SC-03,Govern,Cybersecurity Supply Chain Risk Management,Supply-chain risk is integrated into overall risk management,0,2,2,High
+17,GV.SC-07,Govern,Cybersecurity Supply Chain Risk Management,Supplier risk is tracked over the relationship,0,2,2,High
+18,GV.SC-08,Govern,Cybersecurity Supply Chain Risk Management,Suppliers are included in incident/recovery planning,0,2,2,High
+19,GV.SC-09,Govern,Cybersecurity Supply Chain Risk Management,Supply-chain security is monitored across the lifecycle,0,2,2,High
+20,ID.AM-03,Identify,Asset Management,Authorised network/data flows are mapped,0,2,2,High
+21,ID.RA-07,Identify,Risk Assessment,Changes and exceptions are risk-assessed and tracked,0,2,2,High
+22,ID.IM-01,Identify,Improvement,Improvements are identified from evaluations,0,2,2,High
+23,ID.IM-02,Identify,Improvement,Improvements come from tests and exercises,0,2,2,High
+24,PR.AT-02,Protect,Awareness & Training,People in specialised roles get role-specific training,0,2,2,High
+25,DE.AE-03,Detect,Adverse Event Analysis,Information is correlated from multiple sources,0,2,2,High

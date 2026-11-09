@@ -1,0 +1,6 @@
+asset_id,type,description,owner,criticality,last_updated
+HW-01,hardware,Front-desk PC,Manager,high,2026-10-05
+HW-02,hardware,Owner laptop,Owner,high,2026-10-05
+HW-03,hardware,Wi-Fi router,Manager,medium,2026-10-05
+HW-04,hardware,CCTV NVR,Manager,medium,2026-10-05
+SW-01,software,Booking/PMS (SaaS),Manager,high,2026-10-05

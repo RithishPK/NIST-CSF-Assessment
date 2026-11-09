@@ -1,0 +1,6 @@
+review_date,user,system,access_level,still_required,reviewer
+2026-09-30,manager,booking_system,admin,yes,Owner
+2026-09-30,frontdesk1,booking_system,standard,yes,Manager
+2026-09-30,frontdesk2,booking_system,standard,yes,Manager
+2026-09-30,ex_staff_01,booking_system,standard,NO-REMOVE,Manager
+2026-09-30,manager,cctv_nvr,admin,yes,Owner
