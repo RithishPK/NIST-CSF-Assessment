@@ -147,7 +147,7 @@ def completeness_chart(by_func, path):
 
 # ---------- CSV outputs -----------------------------------------------------
 def write_matrix_csv(results, path):
-    with open(path, "w", newline="") as f:
+    with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["CSF", "ISO_refs", "Control_evidence_expected", "Required",
                     "Status", "Score", "Newest_evidence", "Freshness_days", "Matched_files"])
@@ -160,7 +160,7 @@ def write_matrix_csv(results, path):
 
 
 def write_ai_csv(ai_results, path):
-    with open(path, "w", newline="") as f:
+    with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["Document", "AI_mode", "Summary", "Suggested_controls",
                     "Potential_gaps", "Validation_status", "Human_decision"])
@@ -176,7 +176,7 @@ def write_report(results, ai_results, by_func, overall, files, ai_mode, today, p
     present = sum(1 for r in results if r["status"] == "PRESENT")
     stale = sum(1 for r in results if r["status"] == "STALE")
     missing = sum(1 for r in results if r["status"] == "MISSING")
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         w = f.write
         w("# Evidence Analysis Report\n\n")
         w(f"Assessment date: **{today.isoformat()}**  |  Evidence files scanned: **{len(files)}**  "

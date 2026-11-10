@@ -46,7 +46,7 @@ def build_rows():
 
 
 def write_forward_csv(rows, path):
-    with open(path, "w", newline="") as f:
+    with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["CSF_Subcategory", "Function", "Category", "CSF_Outcome",
                     "ISO27001_2022_Refs", "ISO27001_2022_Titles"])
@@ -72,7 +72,7 @@ def write_reverse_csv(rev, path):
             return (0, int(ref.split(".")[1]), 0)
         _, a, b = ref.split(".")
         return (1, int(a), int(b))
-    with open(path, "w", newline="") as f:
+    with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["ISO27001_2022_Ref", "Type", "ISO_Title", "Num_CSF_Subcats", "CSF_Subcategories"])
         for ref in sorted(rev, key=sortkey):
@@ -118,7 +118,7 @@ def coverage_chart(by_theme_total, by_theme_cov, path):
 def write_report(rows, rev, covered, uncovered, by_theme_total, by_theme_cov, path):
     total_links = sum(len(r["iso_refs"]) for r in rows)
     n_annex_cov = len(covered)
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         w = f.write
         w("# NIST CSF 2.0 ↔ ISO/IEC 27001:2022 Framework Crosswalk\n\n")
         w("A mapping between the 106 NIST CSF 2.0 subcategories and the ISO/IEC 27001:2022 "

@@ -170,7 +170,7 @@ def roadmap(df: pd.DataFrame, summary: pd.DataFrame, outdir: str, top_n: int = 2
     road[csv_cols].to_csv(csv_path, index_label="rank")
 
     md = os.path.join(outdir, "roadmap.md")
-    with open(md, "w") as f:
+    with open(md, "w", encoding="utf-8") as f:
         f.write("# NIST CSF 2.0 - Prioritised Remediation Roadmap\n\n")
         f.write(f"Overall current maturity: **{df['current'].mean():.2f} / 4**  ")
         f.write(f"| target: **{df['target'].mean():.2f} / 4**  ")
